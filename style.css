@@ -111,7 +111,7 @@
 /* Estilos futbol.html */
 
 #futbol {
-    background: url(http://www.complejoelcirculo.com.ar/wp-content/uploads/2020/11/futbol-fondo.jpg);
+    background: url(images/futbol-fondo.jpg)
 }
 
 #futbol::after {
