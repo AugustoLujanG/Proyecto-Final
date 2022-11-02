@@ -3,10 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
-}
 
 /* Primera palabra en negrita */
 .bold {
@@ -14,248 +10,234 @@
     }
 
 /* Estilos Header */
-header {
-    width: 100%;
-    height: 100px;
-    background-color: rgb(5, 176, 5);
+
+#logo {
+    width: 150px;
+    height: 150px;
 }
 
-nav {
-    width: 70%;
-    padding-bottom: 60px;
-    text-align: right;
-}
-
-.menu-container {
-    width: 80%;
-    margin: auto;
-    display: flex;
-    align-items: center;
+.menu {
+    font-size: 22px;
 
 }
 
-.logo {
-    width: 30%;
-    padding-bottom: 60px;
+#color-text a {
+    color: black;
 }
 
-.logo a img {
-    height: 100px;
-    width: 100px;
-}
-
-header nav ul li {
-    display: inline;
-}
-
-header nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-family: 'Raleway', sans-serif;
-    font-weight: bold;
-    font-size: 20px;
-    padding-left: 30px;
-
-}
-
-nav ul li a:hover {
-    color: #444;
+#color-text a:hover {
+    color: rgb(20, 4, 250);
 }
 
 /* Estilos index.html */
-.imagenes img {
-    width: 495px;
-    height: 400px;
-    border-radius: 40px;
+
+#complejo {
+    background: url(images/complejo.jpeg) center center / cover no-repeat;
+    color: white
 }
 
-.imagenes {
-    padding-bottom: 20px;
+#complejo p {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
 }
 
-
-.images-container img {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 3px;
-}
-
-/* Estilos imagen complejo */
-
-.complejo {
-    width: 100%;
-    height: 400px;
-    padding-bottom: 5px;
-    display: inline-block;
-    position: relative;
-}
-
-.complejo img {
+#complejo::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    border-radius: 0;
+    background: linear-gradient(to right top, #00000099, #00000091,#0000006a,#0000005e, #0000002d, #0000000c, #50505000);
+    z-index: -1;
 }
 
-.complejo h1 {
-    font-family: 'Alfa Slab One', cursive;
-    color: white;
+#complejo h1, #futbol h1, #ubicacion h1, #contacto h1, #reserva h1, #tenis h1 {
     font-weight: bold;
-    font-size: 40px;
-    position: absolute;
-    top: 50%;
-    left: 20%;
-}
-
-.complejo p {
-    font-family: 'Raleway', sans-serif;
     color: white;
-    font-weight: bold;
-    font-size: 20px;
-    position: absolute;
-    top: 65%;
-    left: 20%;
-    padding-right: 500px;
 }
 
 /* Estilos imagenes */
 
-.futbol, .tenis, .contacto, .reserva, .ubicacion, .redes, .futbol-5, .futbol-8 {
-    display: inline-block;
+.imagebox {
+    border: 10px groove rgb(2, 250, 221);
+    max-width: 100%;
+    border-radius: 10px;
+    margin: 10px;
     position: relative;
+    text-align: center;
 }
 
-.images-container h2 {
-    display: flex;
-    font-family: 'Paytone One', sans-serif;
+.imagebox a img {
+    max-width: 100%;
+}
+
+.imagebox img {
+    opacity: 1;
+    transition: 0.5s opacity;
+}
+
+.imagebox .imagebox-desc {
+    background-color: rgba(10, 195, 195, 0.6);
+    bottom: 0px;
     color: white;
     font-weight: bold;
-    font-size: 40px;
+    font-size: 1.3em;
+    left: 0px;
     position: absolute;
-    top: 50%;
-    left: 35%;
+    transition: 0.5s padding;
+    text-align: center;
+    width: 100%;
+}
+
+.imagebox:hover img {
+    opacity: 0.8;
+}
+
+.imagebox:hover .imagebox-desc {
+    padding-bottom: 10%;
+}
+
+/* Estilos tenis.html */
+
+#tenis {
+    background: url(http://www.complejoelcirculo.com.ar/wp-content/uploads/2020/11/tenis-fondo.jpg);
+    color: white
 }
 
 /* Estilos futbol.html */
 
-.images-container-futbol h2 {
-    display: flex;
-    font-family: 'Paytone One', sans-serif;
-    color: white;
-    font-weight: bold;
-    font-size: 40px;
+#futbol {
+    background: url(http://www.complejoelcirculo.com.ar/wp-content/uploads/2020/11/futbol-fondo.jpg);
+}
+
+#futbol::after {
+    content: "";
     position: absolute;
-    top: 45%;
-    left: 35%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right top, #000000bd, #00000091,#0000006a,#0000005e, #0000002d, #0000000c, #50505000);
+    z-index: -1;
 }
 
-.images-container-futbol {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 40px 150px;
-}
-
-.descripcion-canchas {
-    display: flex;
-    padding-bottom: 20px;
-}
-
-th, td {
-    padding: 10px;
-    font-family: Calibri;
-    text-align: center;
-    border: 1px solid black;
+.table-title {
+    font-size: 25px;
 }
 
 table {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    margin: 70px 0px;
 }
 
 /* Estilos ubicacion.html */
 
-.mapa-ubicacion {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 30px;
-    font-family: 'Raleway', sans-serif;
+#ubicacion {
+    background: url(http://www.complejoelcirculo.com.ar/wp-content/uploads/2020/10/bg-como-llegar.jpg);
 }
 
-.mapa-ubicacion iframe {
-    height: 700px;
-    width: 900px;
+#ubicacion::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right top, #000000bd, #00000091,#0000006a,#0000005e, #0000002d, #0000000c, #50505000);
+    z-index: -1;
 }
 
-.mapa-ubicacion div {
-    display: flex;
-    flex-direction: column;
-    padding-left: 20px;
+.texto-ubicacion {
+    align-self: center;
     font-size: 30px;
+    font-family: 'Raleway', sans-serif;
+    color: white;
 }
 
-.mapa-ubicacion p {
-    padding: 10px;
+@media only screen and (max-width: 768px) {
+    .texto-ubicacion {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}
+
+.mapa iframe {
+    width: 85%;
 }
 
 /* Estilos contacto.html */
 
-form {
-    width: 650px;
-    margin: auto;
-    background: rgba(123, 121, 121, 0.4);
-    padding: 10px 20px;
-    box-sizing: border-box;
-    margin-top: 20px;
+#rocket {
+    margin-top: 100px;
 }
 
-form h2 {
-    color: black;
-    font-family: 'Raleway', sans-serif;
-    font-weight: bold;
-    font-size: 30px;
-    padding-bottom: 10px;
+#formulario {
+    padding-top: 20px;
 }
 
-.contact input, .contact textarea {
-    width: 100%;
-    margin-bottom: 20px;
-    padding: 8px;
-    box-sizing: border-box;
-    font-size: 20px;
-    border: none;
+#contacto {
+    background: url(images/contacto.jpg) center center / cover no-repeat;
 }
 
-textarea {
-    min-height: 100px;
-    max-height: 200px;
-    max-width: 100%;
+.contact-form {
+    width: 70%;
 }
 
-#boton {
-    background: #31384A;
+.contact-form .form-control {
+    border-radius:1rem;
+}
+
+.contact-image {
+    text-align: center;
+}
+
+.contact-image img {
+    border-radius: 6rem;
+    width: 11%;
+    transform: rotate(29deg);
+}
+
+.contact-form form {
+    padding: 9%;
+}
+
+.contact-form h2 {
+    margin-bottom: 8%;
+    margin-top: -10%;
+    text-align: center;
     color: white;
 }
 
-#boton:hover {
+.contact-form .btnContact {
+    width: max-content;
+    border: none;
+    border-radius: 1rem;
+    padding: 1.5%;
+    background: #dc3545;
+    font-weight: 600;
+    color: #fff;
     cursor: pointer;
 }
 
-/* Formulario contacto responsive */
-@media (max-width: 480px) {
-    form {
-        width: 100%;
-    }
+.btnContactSubmit {
+    width: 50%;
+    border-radius: 1rem;
+    padding: 1.5%;
+    color: #fff;
+    background-color: #0062cc;
+    border: none;
+    cursor: pointer;
 }
 
 /* Estilos resvera.html */
 
-.container-tarjeta {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    padding-top: 40px;
+#reserva {
+    background: url(http://www.complejoelcirculo.com.ar/wp-content/uploads/2020/11/complejo-fondo.jpg);
 }
 
 .boton-comprar input{
@@ -265,117 +247,93 @@ textarea {
     border-radius: 10px;
 }
 
-.card {
-    background:#16181a; 
-    border-radius:14px;
-    max-width: 300px;
-    display:block;
-    margin:auto;
-    padding:60px;
-    box-shadow: 2px 10px 40px black;
-    z-index:99;
+.modal-body {
+    height: 450px
 }
 
-.logo-card {
-    max-width:50px;
-    margin-bottom:15px;
-    margin-top: -19px;
+.nav-tabs {
+    border:none !important
 }
 
-label {
-    display:flex;
-    font-size:10px;
-    color:white;
-    opacity:.4;
+.nav-tabs .nav-link.active {
+    color: #495057;
+    background-color: #fff;
+    border-color: #ffffff #ffffff #fff;
+    border-top: 3px solid blue !important
 }
 
-.container-tarjeta input {
-    font-family: 'Work Sans', sans-serif;
-    background:transparent;
+.nav-tabs .nav-link {
+    margin-bottom: -1px;
+    border: 1px solid transparent;
+    border-top-left-radius: 0rem;
+    border-top-right-radius: 0rem;
+    border-top: 3px solid #eee;
+    font-size: 20px
+}
+
+.nav-tabs .nav-link:hover {
+    border-color: #e9ecef #ffffff #ffffff
+}
+
+.nav-tabs {
+    display: table !important;
+    width: 100%
+} 
+
+.nav-item {
+    display: table-cell
+}
+
+.form-control {
+    border-bottom: 1px solid #eee !important;
     border:none;
-    border-bottom:1px solid transparent;
-    color:#dbdce0;
-    transition: border-bottom .4s;
+    font-weight: 600
 }
 
-.container-tarjeta input:focus {
-    border-bottom:1px solid #1abc9c;
-    outline:none;
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #8bbafe;
+    outline: 0;
+    box-shadow: none
+
 }
 
-.cardnumber {
-    display:block;
-    font-size:20px;
-    margin-bottom:8px;
+.inputbox {
+    position: relative;
+    margin-bottom: 20px;
+    width: 100%
 }
 
-.name {
-    display:block;
-    font-size:15px;
-    max-width: 200px;
-    float:left;
-    margin-bottom:15px;
+.inputbox span {
+    position: absolute;
+    top: 7px;
+    left: 11px;
+    transition: 0.5s
 }
 
-.toleft {
-    float:left;
+.inputbox i {
+    position: absolute;
+    top: 13px;
+    right: 8px;
+    transition: 0.5s;
+    color: #3F51B5
 }
 
-.ccv {
-    width:50px;
-    margin-top:-5px;
-    font-size:15px;
+.ancho-label {
+    width: 50%;
+    margin-bottom: 30px;
 }
 
-.proceed {
-    position:absolute;
-    transform:translate(300px, 10px);
-    width:50px;
-    height:50px;
-    border-radius:50%;
-    background:#1abc9c;
-    border:none;
-    color:white;
-    transition: box-shadow .2s, transform .4s;
-    cursor:pointer;
-}
-
-.proceed:active {
-    outline:none;
-}
-.proceed:focus {
-    outline:none;
-    box-shadow: inset 0px 0px 5px white;
-}
-
-.sendicon {
-    filter:invert(100%);
-    padding-top:2px;
-}
-
-@media (max-width: 600px) {
-    .proceed{transform:translate(250px, 10px);}
-}
-
-.container-seleccion {
+#labels {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-}
-
-.container-seleccion div {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 30px;
-}
-
-select, .calendar input {
-    font-size: 40px;
-    font-family: 'Comfortaa', cursive;
-    border: 3px solid black;    
+    align-items: center;
+    margin-top: 50px;
 }
 
 .bloqueado input{
+    width: 100%;
     padding: 10px;
     margin: 10px 0;
     font-size: 20px;
@@ -383,31 +341,19 @@ select, .calendar input {
     background: rgb(207, 207, 207);
 }
 
-.reservas {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 100px 350px;
-    flex-wrap: wrap;
-}
-
-
-
 /* Estilos Footer */
 
-footer {
-    width: 100%;
-    height: 200px;
-    background-color: rgb(5, 176, 5);
+@media only screen and (max-width: 768px) {
+    .footer-box{
+        padding-bottom: 50px;
+        align-items: center;
+    }
+    
 }
 
-.footer-container {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 1500px;
-    margin: auto;
+footer {
+    padding-top: 15px;
+    margin-top: 30px;
 }
 
 .footer-box {
@@ -422,11 +368,9 @@ footer {
 }
 
 .footer-box .map {
-    padding-top: 20px;
-    padding-right: 20px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-end;
 }
 
 .footer-box .map a{
@@ -437,18 +381,18 @@ footer {
 }
 
 .footer-box a {
-    color: black;
+    color: white;
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
     text-decoration: none;
-    padding: 10px;
+    padding: 5px;
     font-size: 25px;
 }
 
 .footer-box p {
     font-family: 'Raleway', sans-serif;
+    color: white;
     font-weight: bold;
-    padding: 3px;
     display: flex;
     justify-content: center;
 }
