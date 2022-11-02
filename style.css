@@ -104,7 +104,7 @@
 /* Estilos tenis.html */
 
 #tenis {
-    background: url(http://www.complejoelcirculo.com.ar/wp-content/uploads/2020/11/tenis-fondo.jpg);
+    background: url(images/tenis-fondo.jpg);
     color: white
 }
 
@@ -136,7 +136,7 @@ table {
 /* Estilos ubicacion.html */
 
 #ubicacion {
-    background: url(http://www.complejoelcirculo.com.ar/wp-content/uploads/2020/10/bg-como-llegar.jpg);
+    background: url(images/ubicacion-fondo.jpg);
 }
 
 #ubicacion::after {
@@ -237,7 +237,7 @@ table {
 /* Estilos resvera.html */
 
 #reserva {
-    background: url(http://www.complejoelcirculo.com.ar/wp-content/uploads/2020/11/complejo-fondo.jpg);
+    background: url(images/reserva-fondo.jpg);
 }
 
 .boton-comprar input{
