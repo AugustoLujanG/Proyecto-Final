@@ -1,7 +1,7 @@
 <h1 align="center">Hola 👋, soy Augusto</h1>
 <h3 align="center">Estudiante de Ingeniería Informática</h3>
 
-- 🔭 Realizando el proyecto final [Sport Pro](https://github.com/AugustoLujanG/Proyecto-Final.git)
+- 🔭 Realizando el proyecto final [Sport Pro](https://augustolujang.github.io/Proyecto-Final/)
 
 - 🌱 Aprendiendo **Python y desarrollo web full stack**
 
@@ -9,7 +9,7 @@
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
-<a href="https://linkedin.com/in/augusto luján garcía" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="augusto luján garcía" height="30" width="40" /></a>
+<a href="https://linkedin.com/in/https://www.linkedin.com/in/augusto-luj%c3%a1n-garc%c3%ada-b48149210" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="https://www.linkedin.com/in/augusto-luj%c3%a1n-garc%c3%ada-b48149210" height="30" width="40" /></a>
 </p>
 
 <h3 align="left">Languages and Tools:</h3>
