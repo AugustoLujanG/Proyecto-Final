@@ -160,6 +160,7 @@ table {
 @media only screen and (max-width: 768px) {
     .texto-ubicacion {
         display: flex;
+        flex-wrap: wrap;
         flex-direction: column;
         align-items: center;
     }
