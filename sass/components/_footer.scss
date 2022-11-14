@@ -1,0 +1,50 @@
+footer {
+    padding-top: 15px;
+    margin-top: 30px;
+
+    @media only screen and (max-width: 768px) {
+        padding-bottom: 50px;
+        align-items: center;
+    }
+}
+
+.footer-box {
+    display: flex;
+    flex-direction: column;
+
+    .mapa {
+        margin-bottom: 5px;
+        width: 125px;
+        height: 125px;
+    }
+
+    .map {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+        a {
+            font-size: 17px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    a {
+        color: white;
+        font-family: 'Raleway', sans-serif;
+        font-weight: bold;
+        text-decoration: none;
+        padding: 5px;
+        font-size: 25px;
+    }
+
+    p {
+        font-family: 'Raleway', sans-serif;
+        color: white;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+    }
+}

@@ -12,21 +12,13 @@
 /* Estilos Header */
 
 #logo {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
 }
 
 .menu {
     font-size: 22px;
 
-}
-
-#color-text a {
-    color: black;
-}
-
-#color-text a:hover {
-    color: rgb(20, 4, 250);
 }
 
 /* Estilos index.html */

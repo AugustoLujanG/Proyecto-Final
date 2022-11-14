@@ -1,0 +1,28 @@
+%texto-h1 {
+    font-weight: bold;
+    color: white;
+}
+
+#complejo h1 {
+    @extend %texto-h1;
+}
+
+#futbol h1 {
+    @extend %texto-h1;
+}
+
+#tenis h1 {
+    @extend %texto-h1;
+}
+
+#ubicacion h1 {
+    @extend %texto-h1;
+}
+
+#contacto h1 {
+    @extend %texto-h1;
+}
+
+#reserva h1 {
+    @extend %texto-h1;
+}
