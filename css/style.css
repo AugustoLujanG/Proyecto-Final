@@ -59,7 +59,7 @@ footer {
 }
 
 #complejo {
-  background: url(/images/complejo.jpeg) center center/cover no-repeat;
+  background: url(../images/complejo.jpeg) center center/cover no-repeat;
 }
 #complejo::after {
   content: "";
@@ -111,7 +111,7 @@ footer {
 }
 
 #futbol {
-  background: url(/images/futbol-fondo.jpg);
+  background: url(../images/futbol-fondo.jpg);
 }
 #futbol::after {
   content: "";
@@ -133,7 +133,7 @@ table {
 }
 
 #ubicacion {
-  background: url(/images/ubicacion-fondo.jpg);
+  background: url(../images/ubicacion-fondo.jpg);
 }
 #ubicacion::after {
   content: "";
@@ -166,7 +166,7 @@ table {
 }
 
 #contacto {
-  background: url(/images/contacto.jpg) center center/cover no-repeat;
+  background: url(../images/contacto.jpg) center center/cover no-repeat;
 }
 #contacto::after {
   content: "";
@@ -233,7 +233,7 @@ table {
 }
 
 #reserva {
-  background: url(/images/reserva-fondo.jpg);
+  background: url(../images/reserva-fondo.jpg);
 }
 #reserva::after {
   content: "";
@@ -338,7 +338,7 @@ table {
 }
 
 #tenis {
-  background: url(/images/tenis-fondo.jpg);
+  background: url(../images/tenis-fondo.jpg);
 }
 #tenis::after {
   content: "";
