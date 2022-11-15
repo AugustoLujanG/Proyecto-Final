@@ -3,8 +3,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Paytone+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap");
 #logo {
-  width: 100px;
-  height: 100px;
+  width: 110px;
+  height: 110px;
 }
 
 .menu {
@@ -15,61 +15,21 @@ footer {
   padding-top: 15px;
   margin-top: 30px;
 }
+
 @media only screen and (max-width: 768px) {
-  footer {
+  .footer-box {
     padding-bottom: 50px;
     align-items: center;
   }
-}
-
-.footer-box {
-  display: flex;
-  flex-direction: column;
 }
 .footer-box .mapa {
   margin-bottom: 5px;
   width: 125px;
   height: 125px;
 }
-.footer-box .map {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-}
-.footer-box .map a {
-  font-size: 17px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.footer-box a {
-  color: white;
-  font-family: "Raleway", sans-serif;
-  font-weight: bold;
-  text-decoration: none;
-  padding: 5px;
-  font-size: 25px;
-}
-.footer-box p {
-  font-family: "Raleway", sans-serif;
-  color: white;
-  font-weight: bold;
-  display: flex;
-  justify-content: center;
-}
 
 #complejo {
-  background: url(../images/complejo.jpeg) center center/cover no-repeat;
-}
-#complejo::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to right top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.568627451), rgba(0, 0, 0, 0.4156862745), rgba(0, 0, 0, 0.368627451), rgba(0, 0, 0, 0.1764705882), rgba(0, 0, 0, 0.0470588235), rgba(80, 80, 80, 0));
-  z-index: -1;
+  background: url(../images/complejo-fondo.jpeg) center center/cover no-repeat;
 }
 #complejo p {
   margin: 0;
@@ -113,16 +73,6 @@ footer {
 #futbol {
   background: url(../images/futbol-fondo.jpg);
 }
-#futbol::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to right top, rgba(0, 0, 0, 0.7411764706), rgba(0, 0, 0, 0.568627451), rgba(0, 0, 0, 0.4156862745), rgba(0, 0, 0, 0.368627451), rgba(0, 0, 0, 0.1764705882), rgba(0, 0, 0, 0.0470588235), rgba(80, 80, 80, 0));
-  z-index: -1;
-}
 
 .table-title {
   font-size: 25px;
@@ -135,15 +85,9 @@ table {
 #ubicacion {
   background: url(../images/ubicacion-fondo.jpg);
 }
-#ubicacion::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to right top, rgba(0, 0, 0, 0.7411764706), rgba(0, 0, 0, 0.568627451), rgba(0, 0, 0, 0.4156862745), rgba(0, 0, 0, 0.368627451), rgba(0, 0, 0, 0.1764705882), rgba(0, 0, 0, 0.0470588235), rgba(80, 80, 80, 0));
-  z-index: -1;
+
+.bold {
+  font-weight: bold;
 }
 
 .texto-ubicacion {
@@ -167,16 +111,6 @@ table {
 
 #contacto {
   background: url(../images/contacto.jpg) center center/cover no-repeat;
-}
-#contacto::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to right top, rgba(0, 0, 0, 0.7411764706), rgba(0, 0, 0, 0.568627451), rgba(0, 0, 0, 0.4156862745), rgba(0, 0, 0, 0.368627451), rgba(0, 0, 0, 0.1764705882), rgba(0, 0, 0, 0.0470588235), rgba(80, 80, 80, 0));
-  z-index: -1;
 }
 
 #rocket {
@@ -202,16 +136,6 @@ table {
   text-align: center;
   color: white;
 }
-.contact-form .btnContact {
-  width: max-content;
-  border: none;
-  border-radius: 1rem;
-  padding: 1.5%;
-  background: #dc3545;
-  font-weight: 600;
-  color: #fff;
-  cursor: pointer;
-}
 
 .contact-image {
   text-align: center;
@@ -222,28 +146,8 @@ table {
   transform: rotate(29deg);
 }
 
-.btnContactSubmit {
-  width: 50%;
-  border-radius: 1rem;
-  padding: 1.5%;
-  color: #fff;
-  background-color: #0062cc;
-  border: none;
-  cursor: pointer;
-}
-
 #reserva {
   background: url(../images/reserva-fondo.jpg);
-}
-#reserva::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to right top, rgba(0, 0, 0, 0.7411764706), rgba(0, 0, 0, 0.568627451), rgba(0, 0, 0, 0.4156862745), rgba(0, 0, 0, 0.368627451), rgba(0, 0, 0, 0.1764705882), rgba(0, 0, 0, 0.0470588235), rgba(80, 80, 80, 0));
-  z-index: -1;
 }
 
 .boton-comprar input {
@@ -275,8 +179,8 @@ table {
 }
 .nav-tabs .nav-link .active {
   color: #495057;
-  background-color: #fff;
-  border-color: #ffffff #ffffff #fff;
+  background-color: white;
+  border-color: white white white;
   border-top: 3px solid blue !important;
 }
 
@@ -291,7 +195,7 @@ table {
 }
 .form-control:focus {
   color: #495057;
-  background-color: #fff;
+  background-color: white;
   border-color: #8bbafe;
   outline: 0;
   box-shadow: none;
@@ -340,7 +244,24 @@ table {
 #tenis {
   background: url(../images/tenis-fondo.jpg);
 }
-#tenis::after {
+
+#reserva h1, #contacto h1, #ubicacion h1, #tenis h1, #futbol h1, #complejo h1 {
+  font-weight: bold;
+  color: white;
+}
+
+.footer-box .map a, .footer-box .map, .footer-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-box p, .footer-box a {
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+}
+
+#reserva::after, #contacto::after, #ubicacion::after, #tenis::after, #futbol::after, #complejo::after {
   content: "";
   position: absolute;
   top: 0;
@@ -351,9 +272,42 @@ table {
   z-index: -1;
 }
 
-#reserva h1, #contacto h1, #ubicacion h1, #tenis h1, #futbol h1, #complejo h1 {
-  font-weight: bold;
+.btnContactSubmit, .contact-form .btnContact {
+  padding: 1.5;
+  border: none;
+  cursor: pointer;
+}
+
+.contact-form .btnContact {
+  width: max-content;
+  border-radius: 1rem;
+  background: #dc3545;
+  font-weight: 600;
   color: white;
+}
+
+.btnContactSubmit {
+  width: 50%;
+  border-radius: 1rem;
+  color: white;
+  background-color: #0062cc;
+}
+
+.footer-box .map {
+  align-items: flex-end;
+}
+.footer-box .map a {
+  font-size: 17px;
+  align-items: center;
+}
+.footer-box a {
+  text-decoration: none;
+  padding: 5px;
+  font-size: 25px;
+}
+.footer-box p {
+  display: flex;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=style.css.map */

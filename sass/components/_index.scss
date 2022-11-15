@@ -1,23 +1,14 @@
-#complejo {
-    background: url(../images/complejo.jpeg) center center / cover no-repeat;
+@import '../base/variables';
 
-    &::after {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(to right top, #00000099, #00000091,#0000006a,#0000005e, #0000002d, #0000000c, #50505000);
-        z-index: -1;
-    }
+#complejo {
+    background: url(../images/complejo-fondo.jpeg) center center / cover no-repeat;
 
     p {
         margin: 0;
         padding: 0;
         font-size: 20px;
         font-weight: bold;
-        color: white;
+        color: $color-general;
     }
 }
 
@@ -31,7 +22,7 @@
     .imagebox-desc {
         background-color: rgba(10, 195, 195, 0.6);
         bottom: 0px;
-        color: white;
+        color: $color-general;
         font-weight: bold;
         font-size: 1.3em;
         left: 0px;
