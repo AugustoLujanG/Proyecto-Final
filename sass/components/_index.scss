@@ -13,14 +13,14 @@
 }
 
 .imagebox {
-    border: 10px groove rgb(2, 250, 221);
+    border: 10px groove orange;
     max-width: 100%;
     border-radius: 10px;
     margin: 10px;
     position: relative;
     
     .imagebox-desc {
-        background-color: rgba(10, 195, 195, 0.6);
+        background-color: rgba(255, 165, 0, 0.6);
         bottom: 0px;
         color: $color-general;
         font-weight: bold;

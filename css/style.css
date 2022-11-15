@@ -2,6 +2,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Paytone+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap");
+body::-webkit-scrollbar {
+  width: 4px; /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: black; /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: orange; /* color of the scroll thumb */
+  border-radius: 15px; /* roundness of the scroll thumb */
+}
+
 #logo {
   width: 110px;
   height: 110px;
@@ -40,14 +53,14 @@ footer {
 }
 
 .imagebox {
-  border: 10px groove rgb(2, 250, 221);
+  border: 10px groove orange;
   max-width: 100%;
   border-radius: 10px;
   margin: 10px;
   position: relative;
 }
 .imagebox .imagebox-desc {
-  background-color: rgba(10, 195, 195, 0.6);
+  background-color: rgba(255, 165, 0, 0.6);
   bottom: 0px;
   color: white;
   font-weight: bold;
