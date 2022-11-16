@@ -233,25 +233,12 @@ table {
   color: #3F51B5;
 }
 
-.ancho-label {
-  width: 50%;
-  margin-bottom: 30px;
-}
-
-#labels {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 50px;
-}
-
-.bloqueado input {
-  width: 100%;
-  padding: 10px;
-  margin: 10px 0;
-  font-size: 20px;
-  font-family: "Comfortaa", cursive;
+.bloqueado {
   background: rgb(207, 207, 207);
+}
+
+.espaciado {
+  margin: 40px;
 }
 
 #tenis {
@@ -289,13 +276,14 @@ table {
   padding: 1.5;
   border: none;
   cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .contact-form .btnContact {
   width: max-content;
-  border-radius: 1rem;
+  border-radius: 2rem;
   background: #dc3545;
-  font-weight: 600;
   color: white;
 }
 

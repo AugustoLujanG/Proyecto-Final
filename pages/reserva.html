@@ -5,6 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+	<meta name="description" content="Somos un complejo deportivo con canchas de última generación y tecnología. Encontrarán canchas de fútbol con césped sintético y canchas de tenis de polvo de ladrillo con medidas reglamentarias, además de un amplio estacionamiento al aire libre y esacios verdes para disfrutar en familia.">
+
+	<meta name="keywords" content="Fútbol, Tenis, Aire libre, Esparcimiento, Reservas, Sintético, Polvo de ladrillo, Canchas, Deporte, Entretenimiento">
+
+	<meta property="og:title" content="Sport Pro | Reserva | Divertite entrenando">
+	<meta property="og:description" content="Somos un complejo deportivo con canchas de última generación y tecnología. Encontrarán canchas de fútbol con césped sintético y canchas de tenis de polvo de ladrillo con medidas reglamentarias, además de un amplio estacionamiento al aire libre y esacios verdes para disfrutar en familia.">
+	<meta property="og:image" content="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSI7dzja2K_ll6jHBCYzRsXVovWKvYAigGpVg&usqp=CAU">
+	<meta property="og:url" content="https://augustolujang.github.io/Proyecto-Final/">
+	<meta property="og:type" content="website">
+	<meta property="og:locale" content="es_ES">
+
+	<link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+
 	<!-- Bootstrap -->
 
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
@@ -32,7 +45,7 @@
 		<nav class="navbar navbar-dark bg-dark navbar-expand-md">
 			<div class="container-fluid">
 				<a class="navbar-brand" href="../index.html">
-					<img src="../images/logo.png" id="logo" alt="logo" width="100px" height="100px">
+					<img src="../images/logo.png" id="logo" alt="logo">
 				</a>
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
@@ -58,84 +71,90 @@
 			<h1 class="display-3">RESERVAR</h1>
 			<br><br><br><br>
 		</section>
-		
-		<div id="labels" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
-			<select class="form-select ancho-label">
-				<option selected>Cancha</option>
-				<option value="Fútbol 5">Fútbol 5</option>
-				<option value="Fútbol 8">Fútbol 8</option>
-				<option value="Tenis">Tenis</option>
-			</select>
+	
+		<div class="container">
+			<div class="row">
+				<div class="col-md">
+					<div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+						<select class="form-control espaciado nice-select">
+							<option disabled selected>Cancha</option>
+							<option value="Fútbol 5" >Fútbol 5</option>
+							<option value="Fútbol 8">Fútbol 8</option>
+							<option value="Tenis">Tenis</option>
+						</select>
 
-			<div class="calendar ancho-label">
-				<input type="date" id="fecha" onclick="" class="mt-4 form-control">
-					<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-			</div>
-				
-			<select class="form-select ancho-label" aria-label="Default select example">
-				<option value="Turno">Turno</option>
-				<option value="9 a 10">9 a 10</option>
-				<option value="Fútbol 8"></option>
-				<option value="Tenis"></option>
-			</select>
+						<input type="date" class="form-control espaciado">
+							
+						<select class="form-control espaciado">
+							<option disabled selected>Turno</option>
+							<option value="9 a 10">9 a 10</option>
+						</select>							
+
+						<input class="form-control bloqueado espaciado" type=»text» readonly=»readonly» placeholder="$ PRECIO"/>
 						
-			<div class="bloqueado ancho-label">
-				<input type=»text» readonly=»readonly» placeholder="$ PRECIO"/>
-				<input type=»text» readonly=»readonly» placeholder="$ SEÑA"/>
-			</div>
-		</div>
+						<input class="form-control bloqueado espaciado" type=»text» readonly=»readonly» placeholder="$ SEÑA"/>
 
-		<!-- Campos tarjeta -->
-		<div class="modal-dialog" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
-			<div class="modal-content">
-				<div class="modal-body">
-					<div class="text-right">
-						<i class="fa fa-close close" data-dismiss="modal"></i>
 					</div>
-								
-					<div class="tabs mt-3">
-						<ul class="nav nav-tabs" id="myTab" role="tablist">
-							<li class="nav-item" role="presentation">
-								<a class="nav-link active" id="visa-tab" data-toggle="tab" href="#" role="tab" aria-controls="visa" aria-selected="true">
-									<img src="../images/tarjetas.jpeg" width="200">
-								</a>
-							</li>
+				</div>
+				<div class="col-md">
+					<!-- Campos tarjeta -->
+					<div class="modal-dialog" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
+						<div class="modal-content">
+							<div class="modal-body">
+								<div class="text-right">
+									<i class="fa fa-close close" data-dismiss="modal"></i>
+								</div>
+											
+								<div class="tabs mt-3">
+									<ul class="nav nav-tabs" id="myTab" role="tablist">
+										<li class="nav-item" role="presentation">
+											<a class="nav-link active" id="visa-tab" data-toggle="tab" href="#" role="tab" aria-controls="visa" aria-selected="true">
+												<img src="../images/tarjetas.jpeg" width="200" alt="Visa, Mastercard, American">
+											</a>
+										</li>
 
-							<li class="nav-item" role="presentation">
-								<a class="nav-link" id="paypal-tab" data-toggle="tab" href="#" role="tab" aria-controls="paypal" aria-selected="false">
-									<img src="../images/mp.webp" width="145">
-								</a>
-							</li>
-						</ul>
-										
-						<div class="tab-content" id="myTabContent">
-							<div class="tab-pane fade show active" id="visa" role="tabpanel" aria-labelledby="visa-tab">
-								<div class="mt-4 mx-4">
-									<div class="text-center">
-										<h5>Tarjeta de Crédito</h5>
-									</div>
+										<li class="nav-item" role="presentation">
+											<a class="nav-link" id="paypal-tab" data-toggle="tab" href="#" role="tab" aria-controls="paypal" aria-selected="false">
+												<img src="../images/mp.webp" width="145" alt="MercadoPago">
+											</a>
+										</li>
+									</ul>
 													
-									<div class="form mt-3">
-										<div class="inputbox">
-											<input type="text" name="name" class="form-control" required="required">
-											<span>Titular</span>
-										</div>
-															
-										<div class="inputbox">
-											<input type="text" name="name" min="1" max="999" class="form-control" required="required">
-											<span>Número tarjeta</span>
-											<i class="fa fa-eye"></i>
-										</div>
-															
-										<div class="d-flex flex-row"> 
-											<div class="inputbox"> 
-												<input type="text" name="name" min="1" max="999" class="form-control" required="required">
-												<span>Fecha vencimiento</span>
-											</div>
+									<div class="tab-content" id="myTabContent">
+										<div class="tab-pane fade show active" id="visa" role="tabpanel" aria-labelledby="visa-tab">
+											<div class="mt-4 mx-4">
+												<div class="text-center">
+													<h5>Tarjeta de Crédito</h5>
+												</div>
 																
-											<div class="inputbox">
-												<input type="text" name="name" min="1" max="999" class="form-control" required="required">
-												<span>CVV</span>
+												<div class="form mt-3">
+													<div class="inputbox">
+														<input type="text" name="name" class="form-control" required="required">
+														<span>Titular</span>
+													</div>
+																		
+													<div class="inputbox">
+														<input type="text" name="name" min="1" max="999" class="form-control" required="required">
+														<span>Número tarjeta</span>
+														<i class="fa fa-eye"></i>
+													</div>
+																		
+													<div class="d-flex flex-row"> 
+														<div class="inputbox"> 
+															<input type="text" name="name" min="1" max="999" class="form-control" required="required">
+															<span>Fecha vencimiento</span>
+														</div>
+																			
+														<div class="inputbox">
+															<input type="text" name="name" min="1" max="999" class="form-control" required="required">
+															<span>CVV</span>
+														</div>
+													</div>
+
+													<div class="contact-form form-group" >
+														<input type="submit" name="btnSubmit" class="btnContact" value="Reservar" />
+													</div>
+												</div>
 											</div>
 										</div>
 									</div>
@@ -143,6 +162,9 @@
 							</div>
 						</div>
 					</div>
+					
+
+
 				</div>
 			</div>
 		</div>

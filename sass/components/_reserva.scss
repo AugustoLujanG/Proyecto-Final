@@ -78,23 +78,10 @@
     }
 }
 
-.ancho-label {
-    width: 50%;
-    margin-bottom: 30px;
-}
-
-#labels {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 50px;
-}
-
-.bloqueado input{
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    font-size: 20px;
-    font-family: 'Comfortaa', cursive;
+.bloqueado {
     background: rgb(207, 207, 207);
+}
+
+.espaciado {
+    margin: 40px;
 }
