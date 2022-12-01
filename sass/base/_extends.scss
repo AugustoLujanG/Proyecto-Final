@@ -36,6 +36,61 @@
     font-weight: bold;
 }
 
+%underline {
+    right: 0;
+}
+
+%shadow-effect {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+}
+
+%shadow-effect-before {
+    opacity: 1;
+    -webkit-transform: translateY(30px);
+    transform: translateY(30px);
+}
+
+.hvr-float-shadow {
+    &:hover {
+        @extend %shadow-effect;
+    }
+
+    &:focus {
+        @extend %shadow-effect;
+    }
+
+    &:active {
+        @extend %shadow-effect;
+    }
+
+    &:hover:before {
+        @extend %shadow-effect-before;
+    }
+
+    &:focus:before {
+        @extend %shadow-effect-before;
+    }
+
+    &:active:before {
+        @extend %shadow-effect-before;
+    }
+}
+
+.hvr-underline-from-left {
+    &:hover::before {
+        @extend %underline;
+    }
+
+    &:focus::before {
+        @extend %underline;
+    }
+
+    &:active::before {
+        @extend %underline;
+    }
+}
+
 .contact-form {
     .btnContact {
         @extend %boton;
